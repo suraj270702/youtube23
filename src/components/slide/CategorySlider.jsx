@@ -3,13 +3,15 @@ import './Slider.scss'
 import Slider from 'infinite-react-carousel';
 import { data } from '../../data';
 import CategoryCard from '../category/CategoryCard';
-const Slide = ({children,slidesToShow,arrowsScroll}) => {
+const CategorySlider = ({children,slidesToShow,arrowsScroll}) => {
   return (
     <div className='slide'>
         <div className="container">
         <Slider slidesToShow={slidesToShow} arrowsScroll={arrowsScroll}>
     {
-      children
+      data?.map((card)=>(
+        <CategoryCard item={card} key={card.id}/>
+      ))
     }
   </Slider>
         </div>
@@ -17,4 +19,4 @@ const Slide = ({children,slidesToShow,arrowsScroll}) => {
   )
 }
 
-export default Slide
+export default CategorySlider
