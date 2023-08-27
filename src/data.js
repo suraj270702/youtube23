@@ -102,3 +102,14 @@ export const donation = [
         username : "HelpNgo"
     }
 ]
+
+export const donationCategory = [
+    {
+        id : 1,
+        img : "https://img.freepik.com/premium-vector/volunteers-box-concept_118813-4962.jpg",
+        profile : "https://cdn-icons-png.flaticon.com/128/2202/2202112.png",
+        username : "HelpNgo",
+        description : "Food Requirement",
+        verify : true
+    }
+]

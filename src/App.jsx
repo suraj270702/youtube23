@@ -8,6 +8,7 @@ import Footer from "./components/footer/Footer";
 import Home from "./pages/home/Home";
 import Add from "./pages/add/Add";
 import './app.scss'
+import Gigs from "./pages/gigs/Gigs";
 function App() {
 
   const Layout =()=>{
@@ -31,6 +32,10 @@ function App() {
         {
           path:"/add",
           element : <Add />
+        },
+        {
+          path:"/gigs",
+          element : <Gigs />
         }
       ]
     },
