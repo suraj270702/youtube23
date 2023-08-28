@@ -9,6 +9,7 @@ import Home from "./pages/home/Home";
 import Add from "./pages/add/Add";
 import './app.scss'
 import Gigs from "./pages/gigs/Gigs";
+import Gig from "./pages/gig/Gig";
 function App() {
 
   const Layout =()=>{
@@ -36,7 +37,11 @@ function App() {
         {
           path:"/gigs",
           element : <Gigs />
+        },{
+          path:"/gigs/:id",
+          element : <Gig />
         }
+
       ]
     },
   ]);

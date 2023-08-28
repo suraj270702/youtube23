@@ -33,8 +33,10 @@
             align-items: center;
             gap: 5px;
             img{
-                width: 34px;
-                height: 34px;
+                width: 74px;
+                height: 74px;
+                mix-blend-mode: multiply;
+                filter: contrast(1);
             }
         }
     }
