@@ -1,0 +1,52 @@
+.gigs{
+    display: flex;
+    justify-content: center;
+    .container{
+        
+        .title{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            h1{
+                font-weight: 500;
+                font-size: 2rem;
+            }
+            .button{
+                background-color: rgb(51, 174, 51);
+                padding: 10px;
+                color: white;
+                border: none;
+                border-radius: 10px;
+                &:hover{
+                    background-color: green;
+                }
+            }
+            
+        }
+        table{
+            width: 100%;
+            
+            tr{
+                height: 80px; 
+                th{
+                    text-align: left;
+                }
+                td{
+                    img{
+                        width: 40px;
+                        height: 44px;
+                        object-fit: cover;
+                    }
+                    .deletebutton{
+                        width: 40px;
+                        cursor: pointer;
+                    }
+                    
+                }
+                &:nth-child(even){
+                    background-color: #1dbf730f;
+                }
+            }
+        }
+    }
+}

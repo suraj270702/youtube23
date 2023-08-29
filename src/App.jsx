@@ -10,6 +10,10 @@ import Add from "./pages/add/Add";
 import './app.scss'
 import Gigs from "./pages/gigs/Gigs";
 import Gig from "./pages/gig/Gig";
+import MyGigs from "./pages/mygigs/MyGigs";
+import Help from "./pages/orders/Help";
+import Messages from "./pages/messages/Messages";
+import Message from "./pages/message/Message";
 function App() {
 
   const Layout =()=>{
@@ -40,7 +44,21 @@ function App() {
         },{
           path:"/gigs/:id",
           element : <Gig />
-        }
+        },{
+          path:"mygigs",
+          element:<MyGigs />
+        },{
+          path : "/help",
+          element : <Help />
+        },{
+          path : "/messages",
+          element : <Messages />
+        },
+        {
+          path : "message/123",
+          element : <Message />
+        },
+        
 
       ]
     },
